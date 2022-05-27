@@ -1,0 +1,10 @@
+body {
+  font-family: sans-serif;
+}
+
+.main-title {
+  font-size: 26 px;
+  text-transform: uppercase;
+  color: #3ec0ec;
+  font-style: italic;
+}
