@@ -1,14 +1,67 @@
 body {
   font-family: sans-serif;
+  border-top: 5px solid #3ec0ec;
+  font-size: 16px;
+}
+
+.main-header {
+  background-color: #f7f7f7;
 }
 
 .main-title {
   font-size: 26 px;
   text-transform: uppercase;
-  color: #3ec0ec;
   font-style: italic;
 }
 
-/*
-Wassssssuppppp
-*/
+.post-header h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.author {
+  font-style: italic;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h1,
+h2,
+h3 {
+  color: #3ec0ec;
+}
+
+aside h4 {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.5;
+}
+
+li {
+  font-size: 20px;
+}
+
+.related-posts {
+  background-color: #f7f7f7;
+  border-top: 5px solid #3ec0ec;
+  border-bottom: 5px solid #3ec0ec;
+}
+
+a:link,
+a:visited {
+  color: #3ec0ec;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: #1e6b84;
+  font-weight: bold;
+}
