@@ -65,3 +65,7 @@ a:active {
   color: #1e6b84;
   font-weight: bold;
 }
+
+.copyright {
+  font-size: 12px;
+}
