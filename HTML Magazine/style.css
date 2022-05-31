@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: 7px;
+}
+
 body {
   font-family: sans-serif;
   border-top: 5px solid #3ec0ec;
@@ -6,6 +15,8 @@ body {
 
 .main-header {
   background-color: #f7f7f7;
+  padding: 15px 30px;
+  margin-bottom: 35px;
 }
 
 .main-title {
@@ -19,12 +30,22 @@ body {
   font-weight: bold;
 }
 
+.post-header {
+  margin-bottom: 30px;
+}
+
 .author {
   font-style: italic;
 }
 
+.pos-img {
+  width: 800px;
+  height: auto;
+}
+
 h3 {
   font-size: 30px;
+  margin: 20px 20px;
 }
 
 h1,
@@ -42,16 +63,28 @@ aside h4 {
 
 p {
   line-height: 1.5;
+  margin-bottom: 7px;
+}
+
+ul,
+ol {
+  margin: 15px 30px;
 }
 
 li {
-  font-size: 20px;
+  font-size: 14px;
+  margin-bottom: 7px;
 }
+
+/* li:last-child {
+  margin-bottom: 0;
+} */
 
 .related-posts {
   background-color: #f7f7f7;
   border-top: 5px solid #3ec0ec;
   border-bottom: 5px solid #3ec0ec;
+  padding: 30px 0;
 }
 
 a:link,
