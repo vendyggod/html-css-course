@@ -4,7 +4,9 @@
 }
 
 .container {
-  margin-left: 7px;
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
 }
 
 body {
@@ -19,6 +21,21 @@ body {
   margin-bottom: 35px;
 }
 
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+nav a {
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 15px;
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
 .main-title {
   font-size: 26 px;
   text-transform: uppercase;
@@ -28,6 +45,20 @@ body {
 .post-header h2 {
   font-size: 36px;
   font-weight: bold;
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  color: #777;
+  background-color: yellow;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 4px;
+  position: absolute;
+  top: -10px;
+  right: 70px;
 }
 
 .post-header {
@@ -38,8 +69,8 @@ body {
   font-style: italic;
 }
 
-.pos-img {
-  width: 800px;
+.post-img {
+  width: 100%;
   height: auto;
 }
 
@@ -76,15 +107,12 @@ li {
   margin-bottom: 7px;
 }
 
-/* li:last-child {
-  margin-bottom: 0;
-} */
-
 .related-posts {
   background-color: #f7f7f7;
   border-top: 5px solid #3ec0ec;
   border-bottom: 5px solid #3ec0ec;
   padding: 30px 0;
+  width: 500px;
 }
 
 a:link,
@@ -97,6 +125,15 @@ a:hover,
 a:active {
   color: #1e6b84;
   font-weight: bold;
+}
+
+.like {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  position: absolute;
+  bottom: 20px;
+  right: 120px;
 }
 
 .copyright {
