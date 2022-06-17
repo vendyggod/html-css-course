@@ -4,9 +4,8 @@
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   margin: 0 auto;
-  position: relative;
 }
 
 body {
@@ -15,9 +14,23 @@ body {
   font-size: 16px;
 }
 
+article {
+  margin-bottom: 30px;
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+
+.like {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  position: absolute;
+}
+
 .main-header {
   background-color: #f7f7f7;
-  padding: 15px 30px;
+  padding: 15px 15px;
   margin-bottom: 35px;
 }
 
@@ -46,6 +59,7 @@ nav a:last-child {
   font-size: 36px;
   font-weight: bold;
   position: relative;
+  margin-bottom: 20px;
 }
 
 h2::after {
@@ -67,6 +81,14 @@ h2::after {
 
 .author {
   font-style: italic;
+  float: left;
+  padding-top: 13px;
+}
+
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 15px;
 }
 
 .post-img {
@@ -127,15 +149,38 @@ a:active {
   font-weight: bold;
 }
 
-.like {
-  font-size: 20px;
-  cursor: pointer;
-  padding: 5px;
-  position: absolute;
-  bottom: 20px;
-  right: 120px;
-}
-
 .copyright {
   font-size: 12px;
+}
+
+/* LEARNING FLOATS */
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  width: 825px;
+  float: left;
+  /* background-color: green; */
+}
+
+.related-posts {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  /* background-color: blue; */
+  clear: both;
 }
