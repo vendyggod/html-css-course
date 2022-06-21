@@ -42,7 +42,6 @@ h1::first-letter {
 nav a {
   display: inline-block;
   margin-right: 30px;
-  margin-top: 15px;
 }
 
 nav a:last-child {
@@ -83,12 +82,6 @@ h2::after {
   font-style: italic;
   float: left;
   padding-top: 13px;
-}
-
-.author-img {
-  float: left;
-  margin-bottom: 20px;
-  margin-right: 15px;
 }
 
 .post-img {
@@ -154,7 +147,7 @@ a:active {
 }
 
 /* LEARNING FLOATS */
-
+/* 
 h1 {
   float: left;
 }
@@ -172,15 +165,50 @@ nav {
 article {
   width: 825px;
   float: left;
-  /* background-color: green; */
+  /* background-color: green;
 }
 
-.related-posts {
+ .related-posts {
   width: 300px;
   float: right;
 }
 
 footer {
-  /* background-color: blue; */
+  /* background-color: blue; 
   clear: both;
+} 
+*/
+
+/* FLEXBOX */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 15px;
+}
+
+.author {
+  padding-top: 0;
+  margin-bottom: 0;
+}
+
+.author-img {
+  margin-right: 15px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-style: italic;
 }
