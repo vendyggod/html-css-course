@@ -4,9 +4,14 @@
 }
 
 .container {
+<<<<<<< HEAD
   margin: 0 auto;
   width: 1200px;
   border-top: 5px solid #3ec0ec;
+=======
+  width: 1200px;
+  margin: 0 auto;
+>>>>>>> 6656dcd3f6990c00b15c6b09d6dd5e99980de8a8
 }
 
 body {
@@ -14,14 +19,41 @@ body {
   font-size: 16px;
 }
 
+article {
+  margin-bottom: 30px;
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+
+.like {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  position: absolute;
+}
+
 .main-header {
   background-color: #f7f7f7;
-  padding: 15px 30px;
+  padding: 15px 15px;
   margin-bottom: 35px;
 }
 
 h1::first-letter {
   font-style: normal;
+<<<<<<< HEAD
+=======
+  margin-right: 5px;
+}
+
+nav a {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav a:last-child {
+  margin-right: 0;
+>>>>>>> 6656dcd3f6990c00b15c6b09d6dd5e99980de8a8
 }
 
 .main-title {
@@ -41,15 +73,43 @@ nav a:link:last-child {
 .post-header h2 {
   font-size: 36px;
   font-weight: bold;
+<<<<<<< HEAD
   margin-bottom: 20px;
+=======
+  position: relative;
+  margin-bottom: 20px;
+}
+
+h2::after {
+  content: "TOP";
+  color: #777;
+  background-color: yellow;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 4px;
+  position: absolute;
+  top: -10px;
+  right: 70px;
+}
+
+.post-header {
+  margin-bottom: 30px;
+>>>>>>> 6656dcd3f6990c00b15c6b09d6dd5e99980de8a8
 }
 
 .author {
   font-style: italic;
+  float: left;
+  padding-top: 13px;
 }
 
 .post-img {
+<<<<<<< HEAD
   width: 800px;
+=======
+  width: 100%;
+>>>>>>> 6656dcd3f6990c00b15c6b09d6dd5e99980de8a8
   height: auto;
 }
 
@@ -86,6 +146,7 @@ li {
   margin-bottom: 7px;
 }
 
+<<<<<<< HEAD
 /* li:last-child {
   margin-bottom: 0;
 } */
@@ -95,10 +156,14 @@ li {
 }
 
 aside {
+=======
+.related-posts {
+>>>>>>> 6656dcd3f6990c00b15c6b09d6dd5e99980de8a8
   background-color: #f7f7f7;
   border-top: 5px solid #3ec0ec;
   border-bottom: 5px solid #3ec0ec;
   padding: 30px 0;
+  width: 500px;
 }
 
 a:link,
@@ -158,4 +223,71 @@ a:active {
 article {
   flex-basis: 1000px;
   margin-bottom: 30px;
+}
+
+/* LEARNING FLOATS */
+/* 
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  width: 825px;
+  float: left;
+  /* background-color: green;
+}
+
+ .related-posts {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  /* background-color: blue; 
+  clear: both;
+} 
+*/
+
+/* FLEXBOX */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 15px;
+}
+
+.author {
+  padding-top: 0;
+  margin-bottom: 0;
+}
+
+.author-img {
+  margin-right: 15px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-style: italic;
 }
