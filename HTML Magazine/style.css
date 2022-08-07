@@ -4,12 +4,13 @@
 }
 
 .container {
-  margin-left: 7px;
+  margin: 0 auto;
+  width: 1200px;
+  border-top: 5px solid #3ec0ec;
 }
 
 body {
   font-family: sans-serif;
-  border-top: 5px solid #3ec0ec;
   font-size: 16px;
 }
 
@@ -19,26 +20,35 @@ body {
   margin-bottom: 35px;
 }
 
+h1::first-letter {
+  font-style: normal;
+}
+
 .main-title {
   font-size: 26 px;
   text-transform: uppercase;
   font-style: italic;
 }
 
+nav a:link {
+  margin-right: 15px;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
 .post-header h2 {
   font-size: 36px;
   font-weight: bold;
-}
-
-.post-header {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .author {
   font-style: italic;
 }
 
-.pos-img {
+.post-img {
   width: 800px;
   height: auto;
 }
@@ -80,7 +90,11 @@ li {
   margin-bottom: 0;
 } */
 
-.related-posts {
+.related-posts ul {
+  list-style-type: none;
+}
+
+aside {
   background-color: #f7f7f7;
   border-top: 5px solid #3ec0ec;
   border-bottom: 5px solid #3ec0ec;
@@ -100,5 +114,48 @@ a:active {
 }
 
 .copyright {
-  font-size: 12px;
+  font-size: 14px;
+}
+
+/* FLEXBOX */
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author-posted {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.author {
+  margin-bottom: 0;
+}
+
+.related li {
+  display: flex;
+  align-items: center;
+}
+
+.related img {
+  margin-right: 20px;
+}
+
+.related-post p {
+  font-style: italic;
+}
+
+.row {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+article {
+  flex-basis: 1000px;
+  margin-bottom: 30px;
 }

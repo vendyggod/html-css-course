@@ -1,9 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 100px auto;
+  width: 800px;
+  border: 5px solid black;
+  position: relative;
+}
+
 body {
   font-size: 16px;
-  font-family: sans-serif;
   color: #1e1e1e;
   line-height: 1.5;
-  border: 5px solid black;
 }
 
 .product-title {
@@ -13,6 +25,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   background-color: #efefef;
+  width: 100%;
 }
 
 .price {
@@ -28,8 +41,21 @@ body {
   text-transform: uppercase;
 }
 
+.shipping::after {
+  content: "SALE";
+  padding: 4px 8px;
+  background-color: red;
+  color: white;
+  letter-spacing: 2px;
+  position: absolute;
+  top: -15px;
+  left: -30px;
+}
+
 .more-info {
   text-decoration: underline;
+  display: inline-block;
+  margin-bottom: 30px;
 }
 
 .details {
@@ -50,7 +76,8 @@ a:active {
 }
 
 ul li {
-  list-style: square;
+  list-style: none;
+  margin-left: 15px;
 }
 
 button {
@@ -58,11 +85,76 @@ button {
   font-size: 18px;
   background-color: black;
   text-transform: uppercase;
-  border: none;
   cursor: pointer;
+  width: 100%;
+  padding: 15px;
 }
 
 button:hover {
   color: black;
   background-color: white;
+  border-top: 5px solid black;
+}
+
+/* flexbox */
+
+.price-shipping {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.colors {
+  display: flex;
+  gap: 10px;
+}
+
+.color {
+  height: 20px;
+  width: 20px;
+}
+
+.col-1 {
+  background-color: black;
+}
+
+.col-2 {
+  background-color: blue;
+}
+
+.col-3 {
+  background-color: yellow;
+}
+
+.col-4 {
+  background-color: green;
+}
+
+.col-5 {
+  background-color: aquamarine;
+}
+
+/* CSS Grid */
+
+article {
+  display: grid;
+  grid-template-columns: 280px 1fr 1fr;
+  column-gap: 40px;
+}
+
+.product-title {
+  grid-column: 1 / -1;
+  padding: 15px;
+}
+
+button {
+  grid-column: 1 / -1;
+}
+
+.price-info {
+  margin-top: 30px;
+}
+
+.product-description {
+  margin-top: 30px;
 }
