@@ -214,11 +214,30 @@ header {
   padding: 9.6rem 0;
 }
 
+.meal {
+  box-shadow: 0;
+}
+
 .meal-title {
   font-size: 2.4rem;
   color: #333;
   font-weight: 600;
   margin-bottom: 3.2rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 600;
+  background-color: #40c057;
+  border-radius: 100px;
+}
+
+.meal-tag-container {
+  margin-bottom: 1.2rem;
 }
 
 .meal-attributes {
@@ -233,10 +252,16 @@ header {
   font-size: 1.6rem;
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 1.6rem;
 }
 
 .meal-img {
   width: 100%;
   margin-bottom: 1.6rem;
+}
+
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
 }
